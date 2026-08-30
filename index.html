@@ -668,7 +668,11 @@
     opacity:0;
     transition:opacity .4s var(--ease);
   }
-  .behance-card:hover .behance-thumb::after{opacity:1;}
+.behance-card:hover .behance-view {
+	transform: translateY(0);
+	z-index: 2;
+	opacity: 1;
+}
   .behance-view{
     position:absolute;
     left:20px;bottom:16px;right:20px;
